@@ -1,0 +1,32 @@
+# --- Python & System ---
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+.env
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- Project Specific (중요: 대용량 파일 무시) ---
+# 데이터셋 폴더 제외
+data/
+data/images/
+data/masks/
+
+# 학습된 모델 가중치 파일 제외 (필요하면 릴리즈 탭에 따로 올리는 게 정석)
+*.pth
+*.pt
+*.onnx
+models/
+
+# 추론 결과 동영상 제외
+*.mp4
+*.avi
+outputs/
+
+# 로그 파일
+*.log
+runs/
